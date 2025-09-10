@@ -18,4 +18,11 @@ public class InfusionTest {
         String valorEsperado = "Calentar agua. \n" + "Cargar el mate con yerba y verter el agua caliente.";
         assertEquals(valorEsperado, mate.preparar());
     }
+
+    @Test
+    void prepararTeVerde() {
+        Infusion teVerde = new TeVerde();
+        String valorEsperado = "Calentar agua. \n" + "Elegir el saquito de té verde. \n" + "Verter el agua caliente sobre el saquito.";
+        assertEquals(valorEsperado, teVerde.preparar());
+    }
 }
